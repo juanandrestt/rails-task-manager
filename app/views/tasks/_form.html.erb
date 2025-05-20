@@ -1,0 +1,12 @@
+
+<div class="container text-center">
+  <%= form_with model: task, html: { class: 'form-control' } do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+    <%= f.label :completed %>
+    <%= f.check_box :completed %>
+    <%= f.submit %>
+  <% end %>
+</div>
